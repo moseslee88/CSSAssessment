@@ -6,7 +6,8 @@
     <title> The Rich History of the L.A. Dodgers </title>
   </head>
   <body>
-    <h2 style=color:#F633FF>TEXT!</h2>
+    <!--   <h2 style=color:#F633FF>TEXT!</h2>   Don't do this: inline styling is not pro -->
+    <h2>TEXT!</h2>
     <marquee scrollamount="20"; style="color: white; font-size:16px"> Go Blue! </marquee>
     <p><strong>The</strong> Dodgers, known today as the Los Angeles Dodgers, are an American professional baseball team that was founded in 1883 as the Brooklyn Atlantics. Interestingly enough, the team
       was known as the Bridegrooms, Grooms, Superbas, Robins, and Trolley Dodgers
@@ -86,9 +87,9 @@
     <h3>LIST!</h3>
 
 <ul>
-<img src="https://thewiffhotstove.files.wordpress.com/2013/11/dodgers_logo-e1270678197121.jpg" width="170" height="150"/>
+<img src="https://thewiffhotstove.files.wordpress.com/2013/11/dodgers_logo-e1270678197121.jpg" id="Dodger" width="170" height="150"/>
   <li><a href="https://www.mlb.com/dodgers">Los Angeles Dodgers</a>  </LI>
-    <ul>
+    <ul id="DodgerLA">
         <li> - Pitchers  </li>
             <ul>
                  <li> Clayton Kershaw </li>  <!--the ALL STAR -->
@@ -123,9 +124,10 @@
                     </ul>
     </ul>
 
-    <img src="https://s-media-cache-ak0.pinimg.com/564x/0d/c3/86/0dc3864f33b98b25d7a8a6eaedf40d73.jpg" width="158" height="158" />
+    <img src="http://logodatabases.com/wp-content/uploads/2012/05/arizona-diamondbacks-logo-905x1024.jpg" id="Dback" width="158" height="158" />
     <li><a href="https://www.mlb.com/dbacks">Arizona Diamondbacks</a> </LI>
-      <ul>
+    <div>
+        <ul>
           <li> - Pitchers  </li>
               <ul>
                    <li> Zach Greinke </li>  <!-- Diamondbacks' ALL-STAR -->
@@ -158,7 +160,7 @@
                            <li> A.J. Pollock </li>
                       </ul>
       </ul>
-
+    </div>
     </ul>
 
     <hr>   <!-- horizontal line across the screen for better reading -->
@@ -168,16 +170,14 @@
     First name: <input type="text" name="firstname">
     Last name:  <input type="text" name="lastname">
     <br>
-    <div class="dropdown">
-      <button onclick="myFunction()" class="dropbtn">Favorite Sport</button>
-      <div id="myDropdown" class="dropdown-content">
-        <li><a href="#">Basketball</a></li>
-        <li><a href="#">Baseball</a></li>
-        <li><a href="#">Football</a></li>
-        <li><a href="#">Ping Pong</a></li>
-        <li><a href="#">Hockey</a></li>
-      </div>
-    </div>
+        <select>
+          <option value="" disabled="disabled" selected="selected">Favorite Sport</option>
+          <option value="1">Football</option>
+          <option value="1">Hockey</option>
+          <option value="1">Baseball</option>
+          <option value="1">Basketball</option>
+          <option value="1">Soccer</option>
+        </select>
                 <br>
                 <input type="checkbox" name="technology" value="HTML"> I personally played this sport.  <br>
                 <input type="checkbox" name="technology" value="HTML"> I personally coached this sport.  <br>
